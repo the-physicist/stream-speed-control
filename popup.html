@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stream Speed Control</title>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+  </head>
+  <body>
+    <h1 id="title">Stream Speed Control</h1>
+
+    <label> Current Speed: <span id="currentSpeed"> 1x </span></label>
+    <input
+      type="range"
+      id="playbackSpeed"
+      min="0.25"
+      max="3.50"
+      step="0.05"
+      value="1"
+    />
+
+    <label for="videoResolution">Video Quality:</label>
+    <select id="videoResolution">
+      <option value="auto">Auto</option>
+      <option value="360">360p</option>
+      <option value="480">480p</option>
+      <option value="720">720p</option>
+      <option value="1080">1080p</option>
+    </select>
+
+    <button id="resetPlaybackSpeed">Reset</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

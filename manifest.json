@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Stream Speed Control",
+  "version": "1.0",
+  "description": "Control your speed everywhere. Watch everytihng in your own time!",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon128.png"
+  },
+  "host_permissions": ["https://www.youtube.com/*"],
+  "web_accessible_resources": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "resources": ["popup.js"],
+      "use_dynamic_url": true
+    }
+  ]
+}

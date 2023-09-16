@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Arbutus");
+#title {
+  font-family: Arbutus, cursive;
+  font-style: italic;
+  text-align: center;
+  font-size: 2em;
+  color: #f168c1;
+  background-color: #fff;
+  text-shadow: rgb(0, 0, 0) -8px 3px 14px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+label {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+button#resetPlaybackSpeed {
+  background: #f168c1;
+  border: 1px solid #000000;
+  border-radius: 1000px;
+  box-shadow: 0 2px #444444;
+  color: #ffffff;
+  display: inline-block;
+  font: italic bold 35px/50px "Komika", cursive;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  margin-top: 10px;
+  justify-content: center;
+}
