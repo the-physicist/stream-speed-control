@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Stream Speed Control</title>
-    <link rel="stylesheet" type="text/css" href="popup.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Stream Speed Control</title>
+  <link rel="stylesheet" type="text/css" href="popup.css" />
+</head>
+
+<body>
+  <div class="title-h1">
     <h1 id="title">Stream Speed Control</h1>
+  </div>
+
+  <div class="current-speed">
 
     <label> Current Speed: <span id="currentSpeed"> 1x </span></label>
-    <input
-      type="range"
-      id="playbackSpeed"
-      min="0.25"
-      max="3.50"
-      step="0.05"
-      value="1"
-    />
+    <input type="range" id="playbackSpeed" min="0.25" max="3.50" step="0.05" value="1" list="markers" />
+    <datalist id="markers">
+      <option value="0.25" label="0,25"></option>
+      <option value="0.50"></option>
+      <option value="0.75"></option>
+      <option value="1.00" label="1,00"></option>
+      <option value="1.25"></option>
+      <option value="1.50"></option>
+      <option value="1.75" label="1,75"></option>
+      <option value="2.00"></option>
+      <option value="2.25"></option>
+      <option value="2.50" label="2,50"></option>
+      <option value="2.75"></option>
+      <option value="3.00"></option>
+      <option value="3.25"></option>
+      <option value="3.50" label="3,50"></option>
+    </datalist>
+  </div>
 
-    <label for="videoResolution">Video Quality:</label>
-    <select id="videoResolution">
-      <option value="auto">Auto</option>
-      <option value="360">360p</option>
-      <option value="480">480p</option>
-      <option value="720">720p</option>
-      <option value="1080">1080p</option>
-    </select>
-
+  <label for="videoResolution">Video Quality:</label>
+  <select id="videoResolution">
+    <option value="auto">Auto</option>
+    <option value="360">360p</option>
+    <option value="480">480p</option>
+    <option value="720">720p</option>
+    <option value="1080">1080p</option>
+  </select>
+  <div class="button-align">
     <button id="resetPlaybackSpeed">Reset</button>
-    <script src="popup.js"></script>
-  </body>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
 </html>
