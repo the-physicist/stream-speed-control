@@ -1,43 +1,87 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+html{
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #041E43;
+  --secondary-color: #EC887D;
+  --primary-font:'Lato', sans-serif;;
+  --font-primary-color: white;
+  --gradient-background: linear-gradient(180deg, #021228 55.35%, #EC887D 156.3%);
+
+}
+
+
 body {
-  display: flex;
-  flex-direction: column;
-  width: 205px;
-  padding: 20px 10px;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Arbutus");
-
-.title-h1{
-  display: flex;
-  margin-top: 0px;
-}
-
-#title {
-  font-family: Arbutus, cursive;
-  font-style: italic;
-  text-align: center;
-  font-size: 2em;
-  color: #f168c1;
-  background-color: #fff;
-  text-shadow: rgb(4, 4, 4) -2px -2px 4px;
-}
-
-.current-speed{
-  margin-bottom: 10px;
+color: var(--font-primary-color);
+font-family: var(--primary-font);
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
 }
 
 label {
   font-size: 1.5em;
-  font-weight: 500;
-  
+  font-weight: 400;
+  letter-spacing: 0.1px;
 }
 
 input[type="range"] {
   width: 100%;
-  
 }
 
-datalist {
+input, select, button{
+  cursor: pointer;
+}
+
+select{
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 1px;
+}
+
+select option{
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--font-primary-color);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 365px;
+  padding: 20px;
+  background: var(--gradient-background);
+  margin: 0 auto;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color:var(--font-primary-color);
+  font-weight: 400;
+}
+
+.current-speed{
+
+}
+
+.btn-range{
+ 
+}
+
+
+
+  
+/* datalist {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,23 +92,28 @@ datalist {
 datalist option{
   font-size: 15px;
   
-}
+} */
+
 
 .button-align{
   text-align: center;
 }
 
-button#resetPlaybackSpeed {
-  background: #f168c1;
-  border: 1px solid #000000;
-  border-radius: 50%;
-  box-shadow: 0 2px #444444;
+.btn-reset {
+  background: var(--primary-color);
+  padding: 8px;
+  min-width: 100px;
+  border-radius: 8px;
   color: #ffffff;
   display: inline-block;
-  font: italic bold 25px/50px "Komika", cursive;
   text-align: center;
-  text-shadow: 2px 2px #000000;
-  margin-top: 5px;
-  width: 60%;
-  justify-content: center;
+  margin-top: 70px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.btn-reset:hover{
+  background-color: var(--secondary-color);
+  transition: 0.5s ease-in-out;
+  transition: all .3s;
 }
