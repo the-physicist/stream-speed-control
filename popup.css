@@ -13,7 +13,6 @@ html{
 
 }
 
-
 body {
 color: var(--font-primary-color);
 font-family: var(--primary-font);
@@ -69,31 +68,6 @@ select option{
   color:var(--font-primary-color);
   font-weight: 400;
 }
-
-.current-speed{
-
-}
-
-.btn-range{
- 
-}
-
-
-
-  
-/* datalist {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  writing-mode: vertical-lr;
-  width: 205px;
-}
-
-datalist option{
-  font-size: 15px;
-  
-} */
-
 
 .button-align{
   text-align: center;
