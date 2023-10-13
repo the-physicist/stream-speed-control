@@ -2,9 +2,9 @@
 
 ![Project Status](https://img.shields.io/badge/status-in_progress-yellow)
 
-## 📱Extension Preview
+## Extension Preview With All Versions
 
-![Captura de Tela (8747)](https://github.com/LillyButterfly/lillyButterfly/assets/88951197/ac400f59-02a8-4e10-bea5-013d8b520d2d)
+![Extension Preview With All Versions](preview.jpg)
 
 ## 📚 Introduction
 
