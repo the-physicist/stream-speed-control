@@ -4,7 +4,7 @@
 
 ## 📱Extension Preview
 
-![Extension Image](preview.png)
+![Captura de Tela (8747)](https://github.com/LillyButterfly/lillyButterfly/assets/88951197/ac400f59-02a8-4e10-bea5-013d8b520d2d)
 
 ## 📚 Introduction
 
